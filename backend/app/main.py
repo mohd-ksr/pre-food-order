@@ -12,11 +12,7 @@ app = FastAPI(
 )
 
 setup_middleware(app)
-
-from fastapi import FastAPI
-from app.database import engine, Base
-
-app = FastAPI()
+# app = FastAPI()
 
 # @app.on_event("startup")
 # def on_startup():
