@@ -18,9 +18,9 @@ from app.database import engine, Base
 
 app = FastAPI()
 
-@app.on_event("startup")
-def on_startup():
-    Base.metadata.create_all(bind=engine)
+# @app.on_event("startup")
+# def on_startup():
+Base.metadata.create_all(bind=engine)
 
 app.include_router(auth.router)
 
