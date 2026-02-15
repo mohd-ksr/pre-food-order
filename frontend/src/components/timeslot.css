@@ -1,0 +1,48 @@
+.timeslot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* label */
+.timeslot-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* select box */
+.timeslot-select {
+  width: 100%;
+  max-width: 260px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* hover / focus */
+.timeslot-select:hover {
+  border-color: #6366f1;
+}
+
+.timeslot-select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.25);
+}
+
+/* mobile */
+@media (max-width: 480px) {
+  .timeslot-select {
+    max-width: 100%;
+  }
+}

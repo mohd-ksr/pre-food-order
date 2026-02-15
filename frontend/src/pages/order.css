@@ -1,0 +1,96 @@
+.order-page {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* TITLE */
+.order-title {
+  text-align: center;
+  margin-bottom: 14px;
+  color: #111827;
+}
+
+/* BILL CARD */
+.bill {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
+/* ROW */
+.bill-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.bill-row:not(:last-child) {
+  border-bottom: 1px dashed #e5e7eb;
+}
+
+.bill-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.item-meta {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.item-amount {
+  font-weight: 600;
+}
+
+/* TOTAL */
+.bill-divider {
+  border-top: 2px dashed #d1d5db;
+  margin: 14px 0;
+}
+
+.bill-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* SLOT */
+.slot-wrap {
+  margin: 18px 0;
+  text-align: center;
+}
+
+/* BUTTON */
+.place-order-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(79, 70, 229, 0.45);
+}
+
+.place-order-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ERROR */
+.order-error {
+  color: #dc2626;
+  text-align: center;
+  margin-top: 10px;
+}

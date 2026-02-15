@@ -1,0 +1,149 @@
+.menu-page {
+  padding: 20px;
+}
+
+.menu-title {
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #111827;
+}
+
+/* GRID */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* CARD */
+.menu-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* HEADER */
+.menu-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-card-header h3 {
+  font-size: 16px;
+  color: #1f2937;
+}
+
+.price {
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* FOOTER */
+.menu-card-footer {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.menu-card-footer button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #4f46e5;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu-card-footer button:hover {
+  background: #4338ca;
+}
+
+.menu-card-footer button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.qty {
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* ============================= */
+/* 🚫 UNAVAILABLE ITEM STYLES */
+/* ============================= */
+
+.menu-card.disabled {
+  opacity: 0.55;
+  filter: grayscale(100%);
+}
+
+/* Disable hover animation */
+.menu-card.disabled:hover {
+  transform: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Not available label */
+.unavailable-label {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #dc2626;
+}
+
+/* CHECKOUT BAR */
+.checkout-bar {
+  position: sticky;
+  bottom: 0;
+  margin-top: 20px;
+  background: #ffffff;
+  padding: 14px;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-bar button {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #ffffff;
+  border: none;
+  padding: 12px 26px;
+  font-size: 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(34, 197, 94, 0.4);
+}
+
+.checkout-bar button:hover {
+  transform: translateY(-1px);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .menu-title {
+    font-size: 20px;
+  }
+}

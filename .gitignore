@@ -1,0 +1,35 @@
+# ===== General =====
+node_modules/
+dist/
+.env
+.env.*
+__pycache__/
+*.pyc
+*.pyo
+
+# ===== Python =====
+venv/
+.venv/
+pip-wheel-metadata/
+.eggs/
+
+# ===== Logs =====
+*.log
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== IDE =====
+.vscode/
+.idea/
+
+# ===== Build =====
+build/
+
+# ===== SQLite (if used locally) =====
+*.sqlite3
+
+# ===== Coverage =====
+.coverage
+htmlcov/
