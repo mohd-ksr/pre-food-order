@@ -60,7 +60,8 @@ export default function TimeSlotPicker({ value, onChange }) {
     return slotTime >= minTime
   }
 
-  const availableSlots = slots.filter(isSlotValid)
+  // const availableSlots = slots.filter(isSlotValid)
+  const availableSlots = slots
 
   return (
     <div className="timeslot">
